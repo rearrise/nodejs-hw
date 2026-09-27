@@ -10,6 +10,10 @@ app.use(express.json());
 app.use(cors({ origin: "*" }));
 app.use(logger());
 
+app.get("/", (req, res) => {
+  res.status(200).json({ message: "Hello World!" });
+});
+
 app.get("/notes", (req, res) => {
   res.status(200).json({ message: "Retrieved all notes" });
 });

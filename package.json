@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/rearrise/nodejs-hw#readme",
   "dependencies": {
+    "celebrate": "^16.0.0",
     "cors": "^2.8.6",
     "dotenv": "^18.0.4",
     "express": "^5.2.1",

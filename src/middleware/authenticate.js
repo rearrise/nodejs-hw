@@ -9,7 +9,7 @@ export const authenticate = async (req, res, next) => {
   }
   const session = await Session.findOne({
     _id: sessionId,
-    refreshToken,
+    accessToken,
   });
 
   if (!session) {
